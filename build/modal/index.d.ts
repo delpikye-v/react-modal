@@ -5,18 +5,20 @@ interface IReactPortalProps {
     id?: string;
 }
 declare const ReactPortal: React.FC<IReactPortalProps>;
-interface IModalProps {
+export interface IModalProps {
     children: React.ReactNode;
     id?: string;
     modalId?: string;
     isOpen: boolean;
     center?: boolean;
     className?: string;
+    tabIndex?: number;
     showHeader?: boolean;
     showFooter?: boolean;
     modalTitle?: string | React.ReactNode;
     modalHeader?: string | React.ReactNode;
     modalFooter?: string | React.ReactNode;
+    custimizeXClose?: string | React.ReactNode;
     showExtraButton?: boolean;
     showAcceptButton?: boolean;
     showCancelButton?: boolean;
