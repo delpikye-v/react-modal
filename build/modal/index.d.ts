@@ -32,12 +32,12 @@ export interface IModalProps {
     labelAccept?: string;
     labelCancel?: string;
     labelExtra?: string;
-    handleToggle?: (toggle?: boolean) => any;
+    handleToggle?: (toggle: boolean) => any;
     handleAccept?: () => any;
     handleCancel?: () => any;
     hanldeXClose?: () => any;
     handleExtra?: () => any;
-    handleOpen: (isOpen?: boolean) => any;
+    handleOpen: (isOpen: boolean) => any;
 }
 declare const Modal: React.FC<IModalProps>;
 export { ReactPortal };
