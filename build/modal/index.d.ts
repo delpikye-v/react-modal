@@ -7,7 +7,7 @@ interface IReactPortalProps {
 }
 declare const ReactPortal: React.FC<IReactPortalProps>;
 export interface IModalProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     id?: string;
     modalId?: string;
     isOpen: boolean;
@@ -26,7 +26,9 @@ export interface IModalProps {
     showAcceptButton?: boolean;
     showCancelButton?: boolean;
     showXClose?: boolean;
+    disabledClose?: boolean;
     escapeClose?: boolean;
+    outSideClose?: boolean;
     showSplitBorder?: boolean;
     toggleTitleExpand?: boolean;
     fullSceen?: boolean;

@@ -70,7 +70,9 @@ see <b>index.d.ts</b>
 |showAcceptButton?     | boolean (true)
 |showCancelButton?     | boolean (true)
 |showXClose?           | boolean (true)
+|disabledClose?        | boolean (false)
 |escapeClose?          | boolean (true)
+|outSideClose?         | boolean (true)
 |toggleTitleExpand?    | boolean (false)  (dbClickEvent)
 |fullSceen?            | boolean (false)
 |&nbsp;                |
