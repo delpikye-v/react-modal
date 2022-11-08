@@ -51,7 +51,6 @@ import Modal from "react-modal-e2z";
 
 see <b>index.d.ts</b>
 
-
 | props                | type                          | description                                                                |
 |----------------------|-------------------------------|----------------------------------------------------------------------------|
 |id?                   | string
@@ -64,12 +63,15 @@ see <b>index.d.ts</b>
 |modalTitle?           | string
 |modalHeader?          | ReactNode
 |modalFooter?          | ReactNode
+|customizeXClose?      | string / React.ReactNode;
+|alignFooter?:         | "RIGHT" / "CENTER" / "LEFT"
+|fullButtonhMobile?:   | boolean;
 |showExtraButton?      | boolean (false)
 |showAcceptButton?     | boolean (true)
 |showCancelButton?     | boolean (true)
 |showXClose?           | boolean (true)
 |escapeClose?          | boolean (true)
-|toggleTitleExpand?    | boolean (false)
+|toggleTitleExpand?    | boolean (false)  (dbClickEvent)
 |fullSceen?            | boolean (false)
 |&nbsp;                |
 |classNameAccept?      | string
@@ -81,15 +83,15 @@ see <b>index.d.ts</b>
 |handleToggle?         | Function // fullSceen or default
 |handleAccept?         | Function
 |handleCancel?         | Function
-|hanldeXClose?         | Function // default like handleCancel
+|handleXClose?         | Function // default like handleCancel
 |handleExtra?          | Function // when showExtraButton = true
 |handleOpen?           | Function // => handle show modal
-
 
 <br />
 
 #### Note
-
+class for button action:
+modal2-danger-button, modal2-light-button, modal2-primary-button, modal2-secondary-button
 <br />
 
 #### RUN

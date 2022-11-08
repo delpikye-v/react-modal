@@ -1,7 +1,8 @@
 import React from "react";
+import ModalCloseIcon from "./ModalCloseIcon";
 import "./styles.scss";
 interface IReactPortalProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     id?: string;
 }
 declare const ReactPortal: React.FC<IReactPortalProps>;
@@ -18,12 +19,15 @@ export interface IModalProps {
     modalTitle?: string | React.ReactNode;
     modalHeader?: string | React.ReactNode;
     modalFooter?: string | React.ReactNode;
-    custimizeXClose?: string | React.ReactNode;
+    customizeXClose?: string | React.ReactNode;
+    alignFooter?: "RIGHT" | "CENTER" | "LEFT";
+    fullButtonhMobile?: boolean;
     showExtraButton?: boolean;
     showAcceptButton?: boolean;
     showCancelButton?: boolean;
     showXClose?: boolean;
     escapeClose?: boolean;
+    showSplitBorder?: boolean;
     toggleTitleExpand?: boolean;
     fullSceen?: boolean;
     classNameAccept?: string;
@@ -32,13 +36,15 @@ export interface IModalProps {
     labelAccept?: string;
     labelCancel?: string;
     labelExtra?: string;
+    backdropDark?: boolean;
     handleToggle?: (toggle: boolean) => any;
     handleAccept?: () => any;
     handleCancel?: () => any;
-    hanldeXClose?: () => any;
+    handleEscapse?: () => any;
+    handleXClose?: () => any;
     handleExtra?: () => any;
     handleOpen: (isOpen: boolean) => any;
 }
 declare const Modal: React.FC<IModalProps>;
-export { ReactPortal };
+export { ReactPortal, ModalCloseIcon };
 export default Modal;

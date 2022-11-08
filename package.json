@@ -1,6 +1,6 @@
 {
   "name": "react-modal-e2z",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "React hook modal portal. (Lib)",
   "main": "build/index.js",
   "module": "build/index.esm.js",
